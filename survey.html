@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Space Exploration</h1>
+    <p id="description">Flight Options</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Which planets have you visited: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="Moon">Moon</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Venus">Venus</option>
+                <option value="Mercury">Mercury</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Employment Status:</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="employed" checked> Full-time astronaut<br>
+            <input type="radio" class="radio-inline" name="gender" value="freelancer"> Part-time astronaut<br>
+            <input type="radio" class="radio-inline" name="gender" value="applier"> Looking for a job<br>
+            <input type="radio" class="radio-inline" name="gender" value="unemployed"> I am a student.
+          </div>
+          <div id="button-area"><br>
+            <label id="os-label"><b>Flight Experience experience: </b></label><br>
+            <input type="checkbox" name="os1" value="nasa" checked> I am experienced with NASA<br>
+            <input type="checkbox" name="os2" value="spacex"> I am experienced with SpaceX<br>
+            <input type="checkbox" name="0s3" value="roscosmos"> I am experienced with Roscosmos<br>
+            <input type="checkbox" name="0s4" value="jaxa"> I am experienced with JAXA<br>
+            <input type="checkbox" name="0s5" value="other"> I am experienced with other<br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>Company preference: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form"><br><br>
+                <option value="spacex">SpaceX</option>
+                <option value="nasa">Nasa</option>
+                <option value="roscosmos">Roscosmos</option>
+                <option value="jaxa">JAXA</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Programming technology experience:</b></label><br>
+            <input type="checkbox" name="tech1" value="python"> Python<br>
+            <input type="checkbox" name="tech2" value="c++"> C++<br>
+            <input type="checkbox" name="tech3" value="node.js"> Node.js<br>
+            <input type="checkbox" name="tech3" value="ruby"> Ruby<br>
+            <input type="checkbox" name="tech3" value="swift"> Swift<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Please let us know..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
